@@ -307,7 +307,8 @@ img {
   top: 33px;
   display: block;
 }
-.site-nav .site-nav__link .current::after {
+
+.site-nav .site-nav__link.current {
   color: var(--accent-color);
 }
 
