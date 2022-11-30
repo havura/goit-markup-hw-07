@@ -39,11 +39,6 @@
     margin-bottom: 16px;
 }
 
-
-
-
-
-
 .team-list {
     display: flex;
     justify-content: center;
@@ -60,19 +55,22 @@
     border-radius: 50%;
     background-color: var(--main-bgc-color);
     transition: background-color var(--transition-duration);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
 }
 
 .team-list__icon {
     fill: #afb1b8;
     transition: fill var(--transition-duration);
+
+    .team-list__link:hover &,
+    .team-list__link:focus & {
+            fill: var(--main-bgc-color);
+        }
 }
 
-.team-list__link:hover,
-.team-list__link:focus {
-    background-color: var(--accent-color);
-}
 
-.team-list__link:hover .team-list__icon,
-.team-list__link:focus .team-list__icon {
-    fill: var(--main-bgc-color);
-}
+

@@ -28,12 +28,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-duration);
+
+    &:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
 }
 
-.input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
 
 .form__text {
     display: flex;
@@ -51,15 +52,14 @@
     left: 12px;
     transform: translateY(-50%);
     transition: background-color var(--transition-duration);
+    .input:focus + & {
+            fill: var(--accent-color);
+        }
 }
 
 .input__wrapper {
     position: relative;
     display: flex;
-}
-
-.input:focus+.input__icon {
-    fill: var(--accent-color);
 }
 
 .form-message {
@@ -73,19 +73,18 @@
     line-height: 1.7;
     outline: none;
     transition: border-color var(--transition-duration);
-}
 
-.form-message:focus {
+    &:focus {
     outline: none;
     border-color: var(--accent-color);
 }
-
-.form-message::placeholder {
+    &::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
 }
 
 .check-label {
@@ -101,20 +100,19 @@
     border-radius: 2px;
     margin-right: 10px;
     fill: var(--main-bgc-color);
-}
 
-.check__input:checked+.check__icon {
-    background-color: var(--accent-color);
-    border-color: transparent;
+    .check__input:checked + & {
+            background-color: var(--accent-color);
+            border-color: transparent;
+        }
 }
 
 .check__own-icon {
     display: none;
     fill: var(--main-bgc-color);
-}
-
-.check__input:checked+.check__icon .check__own-icon {
-    display: block;
+    .check__input:checked + .check__icon & {
+            display: block;
+        }
 }
 
 .check__link {
@@ -149,9 +147,10 @@
     color: var(--main-bgc-color);
     background-color: var(--accent-color);
     transition: background-color var(--transition-duration), color var(--transition-duration);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--hero-btn-hov-foc);
+        }
 }
 
-.form__btn:hover,
-.form__btn:focus {
-    background-color: var(--hero-btn-hov-foc);
-}

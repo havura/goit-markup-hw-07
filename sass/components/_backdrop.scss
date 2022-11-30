@@ -7,12 +7,12 @@
     z-index: 100;
     background: rgba(0, 0, 0, 0.2);
     transition: transform var(--transition-duration), opacity var(--transition-duration),
-        visibility var(--transition-duration);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: scale(1.5);
+    visibility var(--transition-duration);
+    
+        &.is-hidden {
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transform: scale(1.5);
+            }
 }

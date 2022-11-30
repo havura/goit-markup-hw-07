@@ -19,6 +19,12 @@
     background: var(--main-bgc-color);
     outline: transparent;
     transition: border-color var(--transition-duration);
+
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+            fill: var(--accent-color);
+        }
 }
 
 .client-list__icon {
@@ -26,16 +32,13 @@
     height: 60px;
     fill: #afb1b8;
     transition: fill var(--transition-duration);
+
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+            fill: var(--accent-color);
+        }
 }
 
-.client-list__link:hover .client-list__icon,
-.client-list__link:focus .client-list__icon {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-}
 
-.client-list__link:hover,
-.client-list__link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-}
+

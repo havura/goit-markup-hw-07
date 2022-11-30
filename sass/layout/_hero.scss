@@ -41,9 +41,10 @@
     border: 0px;
     letter-spacing: 0.06em;
     transition: background-color var(--transition-duration), color var(--transition-duration);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--hero-btn-hov-foc);
+        }
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
-    background-color: var(--hero-btn-hov-foc);
-}
