@@ -604,7 +604,7 @@ img {
   fill: #afb1b8;
   transition: fill var(--transition-duration);
 }
-.client-list__icon:hover, .client-list__icon:focus {
+.client-list__link:hover .client-list__icon, .client-list__link:focus .client-list__icon {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }

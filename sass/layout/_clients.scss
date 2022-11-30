@@ -33,12 +33,11 @@
     fill: #afb1b8;
     transition: fill var(--transition-duration);
 
-        &:hover,
-        &:focus {
+    .client-list__link:hover &,
+    .client-list__link:focus & {
             border-color: var(--accent-color);
             fill: var(--accent-color);
-        }
 }
-
+}
 
 
