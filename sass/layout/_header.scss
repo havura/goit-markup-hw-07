@@ -92,6 +92,9 @@
     margin-right: 10px;
     fill: currentColor;
 }
+.header__logo--blue {
+    color: var(--accent-color);
+}
 
 .header__logo {
     font-family: 'Raleway', sans-serif;
@@ -104,6 +107,3 @@
     letter-spacing: 0.03em;
 }
 
-.header__logo--wrap {
-    color: var(--accent-color);
-}
